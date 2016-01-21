@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:background="#AAA" />
+
+    <TextView
+        android:id="@+id/nomStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:textStyle="bold"
+        tools:text="Alboussière" />
+
+    <TextView
+        android:id="@+id/libelleStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/nomStation"
+        android:layout_below="@+id/nomStation"
+        tools:text="@string/libelle" />
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/libelleStation"
+        android:layout_below="@+id/libelleStation"
+        tools:text="@string/latitude" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/latitude"
+        android:layout_below="@+id/latitude"
+        tools:text="@string/longitude" />
+
+    <TextView
+        android:id="@+id/altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/longitude"
+        android:layout_below="@+id/longitude"
+        tools:text="@string/altitude" />
+
+</RelativeLayout>

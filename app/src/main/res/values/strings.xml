@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Météo</string>
+
+    <string name="libelle">Station d\'altitude du pays de Crussol</string>
+    <string name="latitude">latitude : 44.9434</string>
+    <string name="longitude">longitude : 4.72924</string>
+    <string name="altitude">altitude : 547</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>
