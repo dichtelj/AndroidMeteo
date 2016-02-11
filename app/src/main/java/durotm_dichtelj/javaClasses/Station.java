@@ -6,14 +6,14 @@ package durotm_dichtelj.javaClasses;
 public class Station {
 
     private String nom;
-    private String prenom;
-    private double latitude;
-    private double longitude;
-    private int altitude;
+    private String libelle;
+    private String latitude;
+    private String longitude;
+    private String altitude;
 
-    public Station(String nom, String prenom, double latitude, double longitude, int altitude) {
+    public Station(String nom, String libelle, String latitude, String longitude, String altitude) {
         this.nom = nom;
-        this.prenom = prenom;
+        this.libelle = libelle;
         this.latitude = latitude;
         this.longitude = longitude;
         this.altitude = altitude;
@@ -27,35 +27,35 @@ public class Station {
         this.nom = nom;
     }
 
-    public String getPrenom() {
-        return prenom;
+    public String getLibelle() {
+        return libelle;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
     }
 
-    public double getLatitude() {
+    public String getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(double latitude) {
+    public void setLatitude(String latitude) {
         this.latitude = latitude;
     }
 
-    public double getLongitude() {
+    public String getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(double longitude) {
+    public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
 
-    public int getAltitude() {
+    public String getAltitude() {
         return altitude;
     }
 
-    public void setAltitude(int altitude) {
+    public void setAltitude(String altitude) {
         this.altitude = altitude;
     }
 }

@@ -1,22 +1,20 @@
 package durotm_dichtelj.myapplication;
 
+
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
+
+import com.google.gson.Gson;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import durotm_dichtelj.javaClasses.JsonHandler;
+import durotm_dichtelj.javaClasses.ListeReleves;
 import durotm_dichtelj.javaClasses.Station;
 import durotm_dichtelj.javaClasses.StationAdapter;
 
@@ -32,8 +30,28 @@ public class ListeStationActivity extends Activity {
     }
 
     public List<Station> recupererStations() {
+        String jSon = null;
         List<Station> stations = new ArrayList<Station>();
-        stations.add(new Station("TRUC","MACHIN",5.40,1.4,54));
+        try {
+            jSon = new JsonHandler().execute().get();
+            if (jSon == null) {
+                return stations;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Gson gson = new Gson();
+
+        try {
+            for (int i = 0; i <= json.length() - 1; i++) {
+                JSONObject monObjetJSON = json.getJSONObject(i);
+                String monStringJSON = monObjetJSON.toString();
+                Station uneStation = gson.fromJson(monStringJSON, Station.class);
+                stations.add(uneStation);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         return stations;
     }
 }

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ListReleveStationActivity">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvListReleveStationActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtStationListReleveStationActivity"
+        android:id="@+id/txtStationListReleveStationActivity"
+        android:layout_marginTop="15dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueStationListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtStationListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtStationListReleveStationActivity"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtDateListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDateListReleveStationActivity"
+        android:layout_below="@id/txtStationListReleveStationActivity"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueDateListReleveStationActivity"
+        android:layout_below="@+id/txtvalueStationListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtDateListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtDateListReleveStationActivity"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtTempIntListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTempIntListReleveStationActivity"
+        android:layout_below="@id/txtDateListReleveStationActivity"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueTempIntListReleveStationActivity"
+        android:layout_below="@+id/txtvalueDateListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtTempIntListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtTempIntListReleveStationActivity"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtTempExtListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTempExtListReleveStationActivity"
+        android:layout_below="@id/txtTempIntListReleveStationActivity"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueTempExtListReleveStationActivity"
+        android:layout_below="@+id/txtvalueTempIntListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtTempExtListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtTempExtListReleveStationActivity"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtPressionListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPressionListReleveStationActivity"
+        android:layout_below="@id/txtTempExtListReleveStationActivity"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvaluePressionListReleveStationActivity"
+        android:layout_below="@+id/txtvalueTempExtListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtPressionListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtPressionListReleveStationActivity"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtLuminositeListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtLuminositeListReleveStationActivity"
+        android:layout_below="@id/txtPressionListReleveStationActivity"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueLuminositeListReleveStationActivity"
+        android:layout_below="@+id/txtvaluePressionListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtLuminositeListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtLuminositeListReleveStationActivity"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtHygrometrieListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtHygrometrieListReleveStationActivity"
+        android:layout_below="@id/txtLuminositeListReleveStationActivity"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueHygrometrieListReleveStationActivity"
+        android:layout_below="@+id/txtvalueLuminositeListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtHygrometrieListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtHygrometrieListReleveStationActivity"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtVitesseVentListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtVitesseVentListReleveStationActivity"
+        android:layout_below="@id/txtHygrometrieListReleveStationActivity"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueVitesseVentListReleveStationActivity"
+        android:layout_below="@+id/txtvalueHygrometrieListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtVitesseVentListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtVitesseVentListReleveStationActivity"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtDirectionVentListReleveStationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDirectionVentListReleveStationActivity"
+        android:layout_below="@id/txtVitesseVentListReleveStationActivity"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvalueDirectionVentListReleveStationActivity"
+        android:layout_below="@+id/txtvalueVitesseVentListReleveStationActivity"
+        android:layout_toRightOf="@+id/txtDirectionVentListReleveStationActivity"
+        android:layout_toEndOf="@+id/txtDirectionVentListReleveStationActivity"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

@@ -5,24 +5,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.List;
-
 import durotm_dichtelj.javaClasses.Preferences;
-import durotm_dichtelj.javaClasses.Station;
 
 
-public class HomeActivity extends Activity{
+public class DetailStationActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_layout);
+        setContentView(R.layout.detail_layout);
         TextView nomStation = (TextView) findViewById(R.id.nomStation);
         TextView libelleStation = (TextView) findViewById(R.id.libelleStation);
         TextView latitude = (TextView) findViewById(R.id.latitude);
